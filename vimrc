@@ -54,3 +54,10 @@ augroup cursor_off
     autocmd WinLeave * set nocursorline
     autocmd WinEnter * set cursorline
 augroup END 
+
+" Move vertically faster with Shift J/K 
+noremap <S-J> <C-D>
+noremap <S-K> <C-U>
+
+" Moving :help command to Shift F
+noremap <S-F> <S-K>            
