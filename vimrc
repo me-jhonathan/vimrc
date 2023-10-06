@@ -47,6 +47,17 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Easier split window width resizing
+nnoremap <S-Right> :vertical resize +1<CR>
+nnoremap <S-Left> :vertical resize -1<CR>
+
+" Easier split window height resizing
+nnoremap <Right> :resize +1<CR>
+nnoremap <Left> :resize -1<CR>
+
+" Easier split window equal resizing
+nnoremap = <C-w>=
+
 " You can split a window into sections by typing `:split or :sp` or `:vsplit or :vsp`
 " Display cursorline ONLY in active window.
 augroup cursor_off
@@ -56,8 +67,8 @@ augroup cursor_off
 augroup END 
 
 " Move vertically faster with Shift J/K 
-noremap <S-J> <C-D>
-noremap <S-K> <C-U>
+nnoremap <S-J> :execute 'normal! 10j'<CR> 
+nnoremap <S-K> :execute 'normal! 10k'<CR> 
 
 " Moving :help command to Shift F
-noremap <S-F> <S-K>            
+noremap <S-F> <S-K>
